@@ -1,4 +1,3 @@
-
 import 'package:ecommerce_app_3/screen/notify.dart';
 import 'package:flutter/material.dart';
 
@@ -6,11 +5,11 @@ import 'package:ecommerce_app_3/screen/cart/cart.dart';
 import 'package:ecommerce_app_3/screen/homepage/homepage.dart';
 import 'package:ecommerce_app_3/screen/Profile/profile.dart';
 
-void main(){
-  runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: BottomNavigationScreen()));
-}
+// void main(){
+//   runApp(MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: BottomNavigationScreen()));
+// }
 class BottomNavigationScreen extends StatefulWidget {
   const BottomNavigationScreen({super.key});
 
