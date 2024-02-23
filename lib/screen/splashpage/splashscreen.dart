@@ -4,14 +4,6 @@ import 'package:flutter/material.dart';
 import '../login/loginpage.dart';
 
 
-
-// void main(){
-//   runApp( MaterialApp(
-//     debugShowCheckedModeBanner: false,
-//     home:Splashpage() ,
-//   ));
-// }
-
 class Splashpage  extends StatefulWidget{
   @override
   State<Splashpage> createState() => _SplashpageState();

@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-void main(){
-  runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home:products1()));
-}
+
 class products1 extends StatelessWidget {
   List categoryNames1 = [
     "Roller Rabbit",

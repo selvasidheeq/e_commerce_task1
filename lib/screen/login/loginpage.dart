@@ -2,11 +2,7 @@
 import 'package:flutter/material.dart';
 
 import '../bottomnavi/bottomnavi.dart';
-void main(){
-  runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Loginpage1()));
-}
+
 class Loginpage1 extends StatefulWidget {
   const Loginpage1({super.key});
 

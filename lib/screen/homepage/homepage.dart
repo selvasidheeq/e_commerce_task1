@@ -4,11 +4,7 @@ import 'package:flutter/material.dart';
 
 
 
-void main(){
-  runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Homescreen1()));
-}
+
 class Homescreen1 extends StatefulWidget {
   @override
   State<Homescreen1> createState() => _Homescreen1State();
