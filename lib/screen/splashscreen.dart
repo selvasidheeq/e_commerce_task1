@@ -5,12 +5,12 @@ import 'loginpage.dart';
 
 
 
-void main(){
-  runApp( MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home:Splashpage() ,
-  ));
-}
+// void main(){
+//   runApp( MaterialApp(
+//     debugShowCheckedModeBanner: false,
+//     home:Splashpage() ,
+//   ));
+// }
 
 class Splashpage  extends StatefulWidget{
   @override
@@ -42,7 +42,7 @@ class _SplashpageState extends State<Splashpage> {
             Image.asset("assests/icons/logo1.jpeg",height: 150,width: 300,),
             SizedBox(height: 10,),
             Text("Do Shop",
-              style:GoogleFonts.pacifico(fontSize: 35,color: Colors.white70,fontWeight: FontWeight.w200) ,
+              style:TextStyle(fontSize: 35,color: Colors.white70,fontWeight: FontWeight.w200) ,
             )],),),
       ),
     );
