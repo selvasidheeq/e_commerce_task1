@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'bottomnavi.dart';
+import '../bottomnavi/bottomnavi.dart';
 void main(){
   runApp(MaterialApp(
       debugShowCheckedModeBanner: false,

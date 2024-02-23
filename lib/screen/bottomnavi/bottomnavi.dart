@@ -1,9 +1,10 @@
-import 'homepage.dart';
-import 'profile.dart';
+
+import 'package:ecommerce_app_3/screen/notify.dart';
 import 'package:flutter/material.dart';
 
-import 'cart.dart';
-import 'notify.dart';
+import 'package:ecommerce_app_3/screen/cart/cart.dart';
+import 'package:ecommerce_app_3/screen/homepage/homepage.dart';
+import 'package:ecommerce_app_3/screen/Profile/profile.dart';
 
 void main(){
   runApp(MaterialApp(

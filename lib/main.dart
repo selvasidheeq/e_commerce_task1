@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ecommerce_app_3/screen/splashscreen.dart';
+import 'package:ecommerce_app_3/screen/splashpage/splashscreen.dart';
 void main() {
   runApp(const MyApp());
 }
