@@ -29,12 +29,12 @@ class products1 extends StatelessWidget {
 
   ];
   List categoryFoodPics = [
-    "assets/images/bmen.jpg",
-    "assets/images/plzzz1.jpg",
-    "assets/images/wmen3.jpg",
-    "assets/images/wwomen1.jpg",
-    "assets/images/women1.jpg",
-    "assets/images/men2.jpg",
+    "assets/images/dress1.jpg",
+    "assets/images/dress2.jpg",
+    "assets/images/dress3.jpg",
+    "assets/images/dress4.jpg",
+    "assets/images/dress5.jpg",
+    "assets/images/dress6.jpg",
 
   ];
 
@@ -91,7 +91,7 @@ class products1 extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20)
                             ),
                             child: Center(
-                              child: Image.asset("assets/icons/heart2.png",height: 15,),
+                              child: Image.asset("assets/icons/ic_heart.png",height: 15,),
                             ),
                           ))
                     ],

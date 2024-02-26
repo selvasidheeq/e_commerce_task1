@@ -151,10 +151,10 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   }
 
   List listOfimages = [
-    "assets/icons/homepage.png",
-    "assets/icons/trolley.png",
-    "assets/icons/notify.png",
-    "assets/icons/profile.png",
+    "assets/icons/ic_home.png",
+    "assets/icons/ic_trolley.png",
+    "assets/icons/ic_notify.png",
+    "assets/icons/ic_profile.png",
   ];
   List<String> listOfStrings = [
     'Home',

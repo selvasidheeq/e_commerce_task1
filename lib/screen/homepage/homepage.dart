@@ -37,7 +37,7 @@ class _Homescreen1State extends State<Homescreen1> {
                           child: CircleAvatar(
                             backgroundColor: Colors.black,
                             child: Image(image: AssetImage(
-                              "assets/icons/try.png",), height: 50,),
+                              "assets/icons/ic_menu.png",), height: 50,),
                           ),
                         ),
                         CircleAvatar(
@@ -45,7 +45,7 @@ class _Homescreen1State extends State<Homescreen1> {
                           child: InkWell(
                             onTap: () {},
                             child: Image(
-                              image: AssetImage("assets/icons/human.png",),
+                              image: AssetImage("assets/icons/ic_human.png",),
                               height: 50,),
 
                           ),
@@ -89,7 +89,7 @@ class _Homescreen1State extends State<Homescreen1> {
                                 decoration: InputDecoration(
                                     border: InputBorder.none,
                                     prefixIcon: Image(image: AssetImage(
-                                        "assets/icons/searchicon.png")),
+                                        "assets/icons/ic_search.png")),
                                     hintText: "Search.."
                                 ),
                               ),
@@ -107,7 +107,7 @@ class _Homescreen1State extends State<Homescreen1> {
                               child: Padding(
                                 padding: const EdgeInsets.all(2),
                                 child: Image(image: AssetImage(
-                                  "assets/icons/try5.png",), height:85,),
+                                  "assets/icons/ic_.menu2png",), height:85,),
                               ),
                             ),
                           )

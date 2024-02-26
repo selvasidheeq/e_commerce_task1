@@ -53,7 +53,7 @@ class _Loginpage1State extends State<Loginpage1> {
             image:DecorationImage(
                 fit: BoxFit.fill,
                 opacity: 0.1,
-                image: AssetImage("assets/images/image5.jpg"))
+                image: AssetImage("assets/images/logo_bg.jpg"))
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -61,7 +61,7 @@ class _Loginpage1State extends State<Loginpage1> {
               SizedBox(height: 40,),
               Column(
                 children: [
-                  Image.asset("assets/icons/logo1.jpeg",height: 110,width: 250,),
+                  Image.asset("assets/icons/ic_logo.jpeg",height: 110,width: 250,),
                 ],
               ),
               SizedBox(height: 30,),
