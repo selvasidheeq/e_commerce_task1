@@ -1,17 +1,18 @@
 
 import 'package:ecommerce_app_3/utils/custom_textfield.dart';
+import 'package:ecommerce_app_3/utils/pri%20mary_buttom.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app_3/screen/bottomnav/bottomnav.dart';
 
 
-class Loginpage1 extends StatefulWidget {
-  const Loginpage1({super.key});
+class Loginpage extends StatefulWidget {
+  const Loginpage({super.key});
 
   @override
-  State<Loginpage1> createState() => _Loginpage1State();
+  State<Loginpage> createState() => _LoginpageState();
 }
 
-class _Loginpage1State extends State<Loginpage1> {
+class _LoginpageState extends State<Loginpage> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
@@ -106,14 +107,7 @@ class _Loginpage1State extends State<Loginpage1> {
                                   }
                                   return null;
                                 },
-                              //  decoration:  InputDecoration(
-                              //    labelText: "Email",
-                              //    contentPadding:EdgeInsets.only(left:10),
-                              //    hintText: "test@gmail.com",
-                              //    labelStyle: TextStyle(color: Colors.black,),
-                              //    hintStyle: TextStyle(color: Colors.grey),
-                              //    border:InputBorder.none
-                              //  ),
+                              
 
                               ),
                             ),
@@ -135,16 +129,7 @@ class _Loginpage1State extends State<Loginpage1> {
                                  labelText: "Password",
                                     hintText: "......",
                                   suffixIcon:
-                                  //  GestureDetector(
-                                  //      onTap: () {
-                                  //      setState(() {
-                                  //           _obscureText = !_obscureText;
-                                  //                      });
-                                  //                         },
-                                  //               child: Icon(
-                                  //         _obscureText ? Icons.visibility : Icons.visibility_off,
-                                  //             ),
-                                  //              ),
+                                  
                                   IconButton(
                                     icon: Icon(
                                       _obscureText ? Icons.visibility_off : Icons.visibility,
@@ -159,26 +144,9 @@ class _Loginpage1State extends State<Loginpage1> {
                                 controller: _passwordController,
                                 obscureText: _obscureText,
                                 validator: _validatePassword,
-                              //   decoration: InputDecoration(
-                              //       labelText: "Password",
-                              //     contentPadding:EdgeInsets.only(left:10),
-                              //       hintText: "......",
-                              //       labelStyle: TextStyle(color: Colors.black),
-                              //       hintStyle: TextStyle(color: Colors.grey),
-                              //      border: InputBorder.none,
-                              //     suffixIcon: IconButton(
-                              //       icon: Icon(
-                              //         _obscureText ? Icons.visibility_off : Icons.visibility,
-                              //         color: _obscureText ? Colors.grey : Colors.blue,
-                              //       ),
-                              //       onPressed: () {
-                              //         setState(() {
-                              //           _obscureText = !_obscureText;
-                              //         });
-                              //       },
-                              //     ),
+                             
 
-                              // ),
+                            
                             ),),
                           ),
                           SizedBox(height: 10,),
@@ -196,16 +164,16 @@ class _Loginpage1State extends State<Loginpage1> {
                           ElevatedButton(
                             onPressed: _submitForm,
                             child: Text('Login'),
-                            style: ElevatedButton.styleFrom(
+                            style: Primarybutton.customElevatedButtonStyle(
                               padding:  EdgeInsets.symmetric(horizontal: 140, vertical: 18),
-                              primary: Colors.black, // Change color here
-                              shape: const RoundedRectangleBorder(
-                                borderRadius: BorderRadius.only(
-                                  bottomRight: Radius.circular(20),
-                                    topLeft: Radius.circular(10),
-                                    bottomLeft: Radius.circular(10)// Set circular border radius
-                                ),
-                              ),
+                             // primary: Colors.black, // Change color here
+                              // shape: const RoundedRectangleBorder(
+                              //   borderRadius: BorderRadius.only(
+                              //     bottomRight: Radius.circular(20),
+                              //       topLeft: Radius.circular(10),
+                              //       bottomLeft: Radius.circular(10)// Set circular border radius
+                              //   ),
+                              // ),
                             ),
                           ),
                           SizedBox(height: 55,),

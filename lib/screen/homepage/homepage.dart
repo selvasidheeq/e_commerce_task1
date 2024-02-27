@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 
 
 
-class Homescreen1 extends StatefulWidget {
+class Homescreen extends StatefulWidget {
   @override
-  State<Homescreen1> createState() => _Homescreen1State();
+  State<Homescreen> createState() => _HomescreenState();
 }
 
-class _Homescreen1State extends State<Homescreen1> {
+class _HomescreenState extends State<Homescreen> {
 
    List listDress1 = ["Dresses", "jackets", "jeans", "shoes"];
    int current=0;
@@ -165,7 +165,7 @@ class _Homescreen1State extends State<Homescreen1> {
                 ),
                 SizedBox(height: 7,),
 
-                products1()
+                products()
               ],
 
             ),

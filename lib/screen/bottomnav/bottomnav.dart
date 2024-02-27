@@ -21,8 +21,8 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   var _selectedIndex = 0;
 
   List<Widget> buildscreens = [
-    Homescreen1(),
-    Cart1(),
+    Homescreen(),
+    Cart(),
     Notifications(),
     Profile1(),
 

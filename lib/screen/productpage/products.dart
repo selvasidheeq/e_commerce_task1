@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class products1 extends StatelessWidget {
+class products extends StatelessWidget {
   List categoryNames1 = [
     "Roller Rabbit",
     "endless rose",
@@ -44,7 +44,7 @@ class products1 extends StatelessWidget {
   Widget build(BuildContext context) {
     var height=MediaQuery.of(context).size.height;
     return SizedBox(
-      height: 420,
+      //height: 420,
       child: Padding(
         padding: const EdgeInsets.all(7),
         child: GridView.builder(

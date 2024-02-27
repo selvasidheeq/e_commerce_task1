@@ -12,7 +12,7 @@ class _SplashpageState extends State<Splashpage> {
   @override
   void initState() {
     Timer(Duration(seconds: 3),() {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Loginpage1()));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Loginpage()));
 
 
     }) ;
