@@ -1,4 +1,5 @@
 
+import 'package:ecommerce_app_3/utils/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app_3/screen/bottomnav/bottomnav.dart';
 
@@ -93,23 +94,26 @@ class _Loginpage1State extends State<Loginpage1> {
                             ),
                             child: Padding(
                               padding: EdgeInsets.all(5),
-                              child: TextFormField(
+                              child: CustomTextfield(
                                 keyboardType: TextInputType.emailAddress,
-                                controller: _emailController,
+                                labelText: "Email",
+                                hintText: "test@gmail.com",
+                                suffixIcon: null,
+                                 controller: _emailController,
                                 validator:  (value) {
                                   if(value == null || value.isEmpty || !value.contains('@') || !value.contains('.')){
                                     return 'Invalid Email';
                                   }
                                   return null;
                                 },
-                               decoration:  InputDecoration(
-                                 labelText: "Email",
-                                 contentPadding:EdgeInsets.only(left:10),
-                                 hintText: "test@gmail.com",
-                                 labelStyle: TextStyle(color: Colors.black,),
-                                 hintStyle: TextStyle(color: Colors.grey),
-                                 border:InputBorder.none
-                               ),
+                              //  decoration:  InputDecoration(
+                              //    labelText: "Email",
+                              //    contentPadding:EdgeInsets.only(left:10),
+                              //    hintText: "test@gmail.com",
+                              //    labelStyle: TextStyle(color: Colors.black,),
+                              //    hintStyle: TextStyle(color: Colors.grey),
+                              //    border:InputBorder.none
+                              //  ),
 
                               ),
                             ),
@@ -125,17 +129,10 @@ class _Loginpage1State extends State<Loginpage1> {
                               ),),
                             child: Padding(
                               padding: EdgeInsets.all(5),
-                              child: TextFormField(
-                                controller: _passwordController,
-                                obscureText: _obscureText,
-                                validator: _validatePassword,
-                                decoration: InputDecoration(
-                                    labelText: "Password",
-                                  contentPadding:EdgeInsets.only(left:10),
+                              child: CustomTextfield(
+                                keyboardType: TextInputType.number,
+                                 labelText: "Password",
                                     hintText: "......",
-                                    labelStyle: TextStyle(color: Colors.black),
-                                    hintStyle: TextStyle(color: Colors.grey),
-                                   border: InputBorder.none,
                                   suffixIcon: IconButton(
                                     icon: Icon(
                                       _obscureText ? Icons.visibility_off : Icons.visibility,
@@ -147,8 +144,29 @@ class _Loginpage1State extends State<Loginpage1> {
                                       });
                                     },
                                   ),
+                                controller: _passwordController,
+                                obscureText: _obscureText,
+                                validator: _validatePassword,
+                              //   decoration: InputDecoration(
+                              //       labelText: "Password",
+                              //     contentPadding:EdgeInsets.only(left:10),
+                              //       hintText: "......",
+                              //       labelStyle: TextStyle(color: Colors.black),
+                              //       hintStyle: TextStyle(color: Colors.grey),
+                              //      border: InputBorder.none,
+                              //     suffixIcon: IconButton(
+                              //       icon: Icon(
+                              //         _obscureText ? Icons.visibility_off : Icons.visibility,
+                              //         color: _obscureText ? Colors.grey : Colors.blue,
+                              //       ),
+                              //       onPressed: () {
+                              //         setState(() {
+                              //           _obscureText = !_obscureText;
+                              //         });
+                              //       },
+                              //     ),
 
-                              ),
+                              // ),
                             ),),
                           ),
                           SizedBox(height: 10,),
