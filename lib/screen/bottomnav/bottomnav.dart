@@ -1,5 +1,5 @@
 import 'package:ecommerce_app_3/screen/notify/notify.dart';
-import 'package:ecommerce_app_3/utils/Appimages.dart';
+import 'package:ecommerce_app_3/utils/app_images.dart';
 import 'package:flutter/material.dart';
 
 import 'package:ecommerce_app_3/screen/cart/cart.dart';

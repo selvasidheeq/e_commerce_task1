@@ -1,6 +1,7 @@
 
-import 'package:ecommerce_app_3/utils/Appimages.dart';
+import 'package:ecommerce_app_3/utils/app_images.dart';
 import 'package:ecommerce_app_3/utils/custom_textfield.dart';
+import 'package:ecommerce_app_3/utils/form_validator.dart';
 import 'package:ecommerce_app_3/utils/primary_buttom.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app_3/screen/bottomnav/bottomnav.dart';
@@ -19,22 +20,22 @@ class _LoginpageState extends State<Loginpage> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool isenable=false;
 
-  String? _validateEmail(String? value) {
+  // String? _validateEmail(String? value) {
 
-    if (value == null || value.isEmpty) {
-      return 'Please enter your email';
-    }
+  //   if (value == null || value.isEmpty) {
+  //     return 'Please enter your email';
+  //   }
 
-    return null;
-  }
+  //   return null;
+  // }
 
-  String? _validatePassword(String? value) {
-    if (value == null || value.isEmpty) {
-      return 'Please enter your password';
-    }
+  // String? _validatePassword(String? value) {
+  //   if (value == null || value.isEmpty) {
+  //     return 'Please enter your password';
+  //   }
 
-    return null;
-  }
+  //   return null;
+  // }
 
 
   void _submitForm() {
@@ -102,12 +103,13 @@ class _LoginpageState extends State<Loginpage> {
                                 hintText: "test@gmail.com",
                                 suffixIcon: null,
                                  controller: _emailController,
-                                validator:  (value) {
-                                  if(value == null || value.isEmpty || !value.contains('@') || !value.contains('.')){
-                                    return 'Invalid Email';
-                                  }
-                                  return null;
-                                },
+                                validator: FormValidator.validateEmail
+                                //  (value) {
+                                //   if(value == null || value.isEmpty || !value.contains('@') || !value.contains('.')){
+                                //     return 'Invalid Email';
+                                //   }
+                                //   return null;
+                                // },
                               
 
                               ),
@@ -144,11 +146,8 @@ class _LoginpageState extends State<Loginpage> {
                                   ),
                                 controller: _passwordController,
                                 obscureText: _obscureText,
-                                validator: _validatePassword,
-                             
-
-                            
-                            ),),
+                                validator:FormValidator. validateEmail,
+                               ),),
                           ),
                           SizedBox(height: 10,),
                           Padding(
