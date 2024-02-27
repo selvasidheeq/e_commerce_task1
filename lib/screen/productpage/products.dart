@@ -1,3 +1,4 @@
+import 'package:ecommerce_app_3/utils/Appimages.dart';
 import 'package:flutter/material.dart';
 
 class products extends StatelessWidget {
@@ -29,12 +30,12 @@ class products extends StatelessWidget {
 
   ];
   List categoryFoodPics = [
-    "assets/images/dress1.jpg",
-    "assets/images/dress2.jpg",
-    "assets/images/dress3.jpg",
-    "assets/images/dress4.jpg",
-    "assets/images/dress5.jpg",
-    "assets/images/dress6.jpg",
+    AppImages.dress1,
+    AppImages.dress2,
+    AppImages.dress3,
+    AppImages.dress4,
+    AppImages.dress5,
+    AppImages.dress6,
 
   ];
 
@@ -91,7 +92,7 @@ class products extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20)
                             ),
                             child: Center(
-                              child: Image.asset("assets/icons/ic_heart.png",height: 15,),
+                              child: Image.asset(AppImages.heart,height: 15,),
                             ),
                           ))
                     ],

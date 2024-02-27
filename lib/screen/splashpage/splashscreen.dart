@@ -1,5 +1,6 @@
 
 import 'dart:async';
+import 'package:ecommerce_app_3/utils/Appimages.dart';
 import 'package:flutter/material.dart';
 import '../login/loginpage.dart';
 
@@ -27,11 +28,11 @@ class _SplashpageState extends State<Splashpage> {
             image:DecorationImage(
                 fit: BoxFit.fill,
                 opacity: 0.1,
-                image: AssetImage("assets/images/logo_bg.jpg"))
+                image: AssetImage(AppImages.logoBg))
         ),
         child: Center(child: Column( mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset("assets/icons/ic_logo.jpeg",height: 150,width: 300,),
+            Image.asset(AppImages.logo,height: 150,width: 300,),
             SizedBox(height: 10,),
             Text("Do Shop",
               style:TextStyle(fontSize: 35,color: Colors.white70,fontWeight: FontWeight.w200) ,

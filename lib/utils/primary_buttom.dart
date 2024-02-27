@@ -13,7 +13,7 @@ class PrimaryButton extends StatelessWidget {
     return ElevatedButton(
                        onPressed: onPressed,
                            
-                           child: Text('Login'),
+                           child: Text(label),
                             style: ElevatedButton.styleFrom(
                               padding:  EdgeInsets.symmetric(horizontal: 140, vertical: 18),
                              primary: Colors.black, // Change color here

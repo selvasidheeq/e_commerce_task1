@@ -1,4 +1,5 @@
 import 'package:ecommerce_app_3/screen/notify/notify.dart';
+import 'package:ecommerce_app_3/utils/Appimages.dart';
 import 'package:flutter/material.dart';
 
 import 'package:ecommerce_app_3/screen/cart/cart.dart';
@@ -152,10 +153,10 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   }
 
   List listOfimages = [
-    "assets/icons/ic_home.png",
-    "assets/icons/ic_trolley.png",
-    "assets/icons/ic_notify.png",
-    "assets/icons/ic_profile.png",
+    AppImages.home,
+    AppImages.trolley,
+    AppImages.notify,
+    AppImages.profile,
   ];
   List<String> listOfStrings = [
     'Home',

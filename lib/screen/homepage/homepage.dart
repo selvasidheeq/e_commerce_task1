@@ -1,4 +1,5 @@
 import 'package:ecommerce_app_3/screen/productpage/products.dart';
+import 'package:ecommerce_app_3/utils/Appimages.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -36,8 +37,8 @@ class _HomescreenState extends State<Homescreen> {
                           },
                           child: CircleAvatar(
                             backgroundColor: Colors.black,
-                            child: Image(image: AssetImage(
-                              "assets/icons/ic_menu.png",), height: 50,),
+                            child: Image(image: AssetImage(AppImages.menu
+                              ), height: 50,),
                           ),
                         ),
                         CircleAvatar(
@@ -45,7 +46,7 @@ class _HomescreenState extends State<Homescreen> {
                           child: InkWell(
                             onTap: () {},
                             child: Image(
-                              image: AssetImage("assets/icons/ic_human.png",),
+                              image: AssetImage(AppImages.human,),
                               height: 50,),
 
                           ),
@@ -89,7 +90,7 @@ class _HomescreenState extends State<Homescreen> {
                                 decoration: InputDecoration(
                                     border: InputBorder.none,
                                     prefixIcon: Image(image: AssetImage(
-                                        "assets/icons/ic_search.png")),
+                                        AppImages.search)),
                                     hintText: "Search.."
                                 ),
                               ),
@@ -107,7 +108,7 @@ class _HomescreenState extends State<Homescreen> {
                               child: Padding(
                                 padding: const EdgeInsets.all(2),
                                 child: Image(image: AssetImage(
-                                  "assets/icons/ic_.menu2png",), height:85,),
+                                  AppImages.menu2,), height:85,),
                               ),
                             ),
                           )

@@ -1,4 +1,5 @@
 
+import 'package:ecommerce_app_3/utils/Appimages.dart';
 import 'package:ecommerce_app_3/utils/custom_textfield.dart';
 import 'package:ecommerce_app_3/utils/primary_buttom.dart';
 import 'package:flutter/material.dart';
@@ -55,7 +56,7 @@ class _LoginpageState extends State<Loginpage> {
             image:DecorationImage(
                 fit: BoxFit.fill,
                 opacity: 0.1,
-                image: AssetImage("assets/images/logo_bg.jpg"))
+                image: AssetImage(AppImages.logoBg))
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -63,7 +64,7 @@ class _LoginpageState extends State<Loginpage> {
               SizedBox(height: 40,),
               Column(
                 children: [
-                  Image.asset("assets/icons/ic_logo.jpeg",height: 110,width: 250,),
+                  Image.asset(AppImages.logo,height: 110,width: 250,),
                 ],
               ),
               SizedBox(height: 30,),
