@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app_3/utils/app_images.dart';
 
-class AppBar extends StatelessWidget {
-  const AppBar({super.key});
+class AppBar_Widget extends StatelessWidget {
+  const AppBar_Widget({super.key});
 
   @override
   Widget build(BuildContext context) {
