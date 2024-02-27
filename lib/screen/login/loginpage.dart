@@ -1,6 +1,6 @@
 
 import 'package:ecommerce_app_3/utils/custom_textfield.dart';
-import 'package:ecommerce_app_3/utils/pri%20mary_buttom.dart';
+import 'package:ecommerce_app_3/utils/primary_buttom.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app_3/screen/bottomnav/bottomnav.dart';
 
@@ -161,21 +161,10 @@ class _LoginpageState extends State<Loginpage> {
                           ),
 
                           SizedBox(height: 10),
-                          ElevatedButton(
+                          PrimaryButton(
                             onPressed: _submitForm,
-                            child: Text('Login'),
-                            style: Primarybutton.customElevatedButtonStyle(
-                              padding:  EdgeInsets.symmetric(horizontal: 140, vertical: 18),
-                             // primary: Colors.black, // Change color here
-                              // shape: const RoundedRectangleBorder(
-                              //   borderRadius: BorderRadius.only(
-                              //     bottomRight: Radius.circular(20),
-                              //       topLeft: Radius.circular(10),
-                              //       bottomLeft: Radius.circular(10)// Set circular border radius
-                              //   ),
-                              // ),
+                            label: 'Login',
                             ),
-                          ),
                           SizedBox(height: 55,),
                           TextButton(onPressed: (){
                           //  Navigator.push(context, MaterialPageRoute(builder: (context) =>Signup_1()),);
