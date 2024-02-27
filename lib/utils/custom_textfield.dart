@@ -7,26 +7,29 @@ class CustomTextfield extends StatelessWidget {
   final String labelText;
   final String hintText;
   final Widget? suffixIcon;
+  // final Function onTapSuffixIcon;
   final String? Function(String?) validator;
   const CustomTextfield(
     {
       super.key,
     required this.controller,
-    required this.keyboardType,
+   required this.keyboardType,
     required this.labelText,
     required this.hintText,
     required this.validator,
     required this.suffixIcon,
-    this.obscureText = true,
+  //  required this.onTapSuffixIcon,
+    this. obscureText = false,
     }
   );
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
- keyboardType: keyboardType,
+   keyboardType: keyboardType,
     controller: controller,
     validator: validator,
+     obscureText:obscureText,
     decoration: InputDecoration(
       labelText: labelText,
       contentPadding:EdgeInsets.only(left:10),
@@ -35,7 +38,7 @@ class CustomTextfield extends StatelessWidget {
       hintStyle: TextStyle(color: Colors.grey),
       border: InputBorder.none,
       suffixIcon: suffixIcon,
-    ),
+  ),
     );
   }
 }

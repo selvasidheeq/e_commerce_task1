@@ -34,6 +34,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   Widget build(BuildContext context) {
     double displayWidth = MediaQuery.of(context).size.width;
     return Scaffold(
+      extendBody: true,
       body: buildscreens[_selectedIndex],
       bottomNavigationBar: Container(
         margin: EdgeInsets.all(displayWidth * .004),

@@ -131,9 +131,21 @@ class _Loginpage1State extends State<Loginpage1> {
                               padding: EdgeInsets.all(5),
                               child: CustomTextfield(
                                 keyboardType: TextInputType.number,
+                                  
                                  labelText: "Password",
                                     hintText: "......",
-                                  suffixIcon: IconButton(
+                                  suffixIcon:
+                                  //  GestureDetector(
+                                  //      onTap: () {
+                                  //      setState(() {
+                                  //           _obscureText = !_obscureText;
+                                  //                      });
+                                  //                         },
+                                  //               child: Icon(
+                                  //         _obscureText ? Icons.visibility : Icons.visibility_off,
+                                  //             ),
+                                  //              ),
+                                  IconButton(
                                     icon: Icon(
                                       _obscureText ? Icons.visibility_off : Icons.visibility,
                                       color: _obscureText ? Colors.grey : Colors.blue,
