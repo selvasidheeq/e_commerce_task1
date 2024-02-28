@@ -44,7 +44,8 @@ class _LoginpageState extends State<Loginpage> {
 
     }
 
-  } bool _obscureText = true;
+  }
+   bool _obscureText = true;
 
   @override
   Widget build(BuildContext context) {

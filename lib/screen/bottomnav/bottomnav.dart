@@ -1,10 +1,10 @@
-import 'package:ecommerce_app_3/screen/notify/notify.dart';
+import 'package:ecommerce_app_3/screen/pages/notify/notify.dart';
 import 'package:ecommerce_app_3/utils/app_images.dart';
 import 'package:flutter/material.dart';
 
-import 'package:ecommerce_app_3/screen/cart/cart.dart';
+import 'package:ecommerce_app_3/screen/pages/cart/cart.dart';
 import 'package:ecommerce_app_3/screen/homepage/homepage.dart';
-import 'package:ecommerce_app_3/screen/profilepage/profile.dart';
+import 'package:ecommerce_app_3/screen/pages/profilepage/profile.dart';
 
 // void main(){
 //   runApp(MaterialApp(

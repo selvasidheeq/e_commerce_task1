@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Catogory_List extends StatefulWidget {
-  const Catogory_List({super.key});
+class CatogoryList extends StatefulWidget {
+  const CatogoryList({super.key});
 
   @override
-  State<Catogory_List> createState() => _Catogory_ListState();
+  State<CatogoryList> createState() => _CatogoryListState();
 }
 
-class _Catogory_ListState extends State<Catogory_List> {
+class _CatogoryListState extends State<CatogoryList> {
 
   List listDress1 = ["Dresses", "jackets", "jeans", "shoes"];
    int current=0;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app_3/utils/app_images.dart';
 
-class Search_bar extends StatelessWidget {
-  const Search_bar({super.key});
+class CustomSearchbar extends StatelessWidget {
+  const CustomSearchbar({super.key});
 
   @override
   Widget build(BuildContext context) {
