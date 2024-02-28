@@ -6,13 +6,17 @@ import 'package:ecommerce_app_3/screen/pages/cart/cart.dart';
 import 'package:ecommerce_app_3/screen/homepage/homepage.dart';
 import 'package:ecommerce_app_3/screen/pages/profilepage/profile.dart';
 
-// void main(){
-//   runApp(MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       home: BottomNavigationScreen()));
-// }
+
 class BottomNavigationScreen extends StatefulWidget {
-  const BottomNavigationScreen({super.key});
+  
+  const BottomNavigationScreen({
+   required BuildContext context,
+    required int selectedIndex,
+    required Function(int) onItemTapped,
+    required List<String> listOfStrings,
+    required List<String> listOfImages,
+  });
+ // const BottomNavigationScreen({super.key});
 
   @override
   State<BottomNavigationScreen> createState() => _BottomNavigationScreenState();

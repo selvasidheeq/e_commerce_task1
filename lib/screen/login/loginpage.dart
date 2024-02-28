@@ -20,22 +20,9 @@ class _LoginpageState extends State<Loginpage> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool isenable=false;
 
-  // String? _validateEmail(String? value) {
+  
 
-  //   if (value == null || value.isEmpty) {
-  //     return 'Please enter your email';
-  //   }
-
-  //   return null;
-  // }
-
-  // String? _validatePassword(String? value) {
-  //   if (value == null || value.isEmpty) {
-  //     return 'Please enter your password';
-  //   }
-
-  //   return null;
-  // }
+ 
 
 
   void _submitForm() {
@@ -105,12 +92,7 @@ class _LoginpageState extends State<Loginpage> {
                                 suffixIcon: null,
                                  controller: _emailController,
                                 validator: FormValidator.validateEmail
-                                //  (value) {
-                                //   if(value == null || value.isEmpty || !value.contains('@') || !value.contains('.')){
-                                //     return 'Invalid Email';
-                                //   }
-                                //   return null;
-                                // },
+                                
                               
 
                               ),
@@ -133,7 +115,6 @@ class _LoginpageState extends State<Loginpage> {
                                  labelText: "Password",
                                     hintText: "......",
                                   suffixIcon:
-                                  
                                   IconButton(
                                     icon: Icon(
                                       _obscureText ? Icons.visibility_off : Icons.visibility,
@@ -168,7 +149,7 @@ class _LoginpageState extends State<Loginpage> {
                             ),
                           SizedBox(height: 55,),
                           TextButton(onPressed: (){
-                          //  Navigator.push(context, MaterialPageRoute(builder: (context) =>Signup_1()),);
+                          
                             }, child: Text("Don't have any account? Sign Up",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),))
                         ],
                       ),
