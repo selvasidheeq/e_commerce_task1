@@ -7,12 +7,12 @@ import 'package:ecommerce_app_3/screen/homepage/widgets/search_bar.dart';
 import 'package:ecommerce_app_3/screen/homepage/widgets/app_bar.dart';
 
 
-class Homescreen extends StatefulWidget {
+class SliverHomescreen extends StatefulWidget {
   @override
-  State<Homescreen> createState() => _HomescreenState();
+  State<SliverHomescreen> createState() => _SliverHomescreenState();
 }
 
-class _HomescreenState extends State<Homescreen> {
+class _SliverHomescreenState extends State<SliverHomescreen> {
 
    List listDress1 = ["Dresses", "jackets", "jeans", "shoes"];
    int current=0;
