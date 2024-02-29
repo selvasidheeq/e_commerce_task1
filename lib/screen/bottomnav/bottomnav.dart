@@ -5,24 +5,20 @@ import 'package:flutter/material.dart';
 import 'package:ecommerce_app_3/screen/pages/cart/cart.dart';
 import 'package:ecommerce_app_3/screen/homepage/homepage.dart';
 import 'package:ecommerce_app_3/screen/pages/profilepage/profile.dart';
-
+void main() {
+  runApp( BottomNavigationScreen());
+}
 
 class BottomNavigationScreen extends StatefulWidget {
   
-  const BottomNavigationScreen({
-   required BuildContext context,
-    required int selectedIndex,
-    required Function(int) onItemTapped,
-    required List<String> listOfStrings,
-    required List<String> listOfImages,
-  });
- // const BottomNavigationScreen({super.key});
+ 
+  const BottomNavigationScreen({super.key});
 
   @override
   State<BottomNavigationScreen> createState() => _BottomNavigationScreenState();
 }
-
 class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
+     final pageBucket =PageStorageBucket();
   var _selectedIndex = 0;
 
   List<Widget> buildscreens = [
@@ -30,18 +26,47 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
     Cart(),
     Notifications(),
     Profile1(),
+ ];
 
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+       extendBody: true,
+      body: 
+      //buildscreens[_selectedIndex],
+      PageStorage(bucket: pageBucket,child: buildscreens[_selectedIndex],),
+      // bottomNavigationBar : bottamnav_widget(
+      //    selectedIndex: _selectedIndex,
+      //   onItemSelected: (index) {
+      //     setState(() {
+      //       _selectedIndex = index;
+      //     });
+      //   },
+      // ),
+    );
+    
+  }
+}
 
-
-  ];
+class bottamnav_widget extends StatelessWidget {
+  final int selectedIndex;
+  final Function(int) onItemSelected ;
+  
+  bottamnav_widget({
+     required this.selectedIndex,
+    required this.onItemSelected,
+    
+  });
 
   @override
   Widget build(BuildContext context) {
     double displayWidth = MediaQuery.of(context).size.width;
-    return Scaffold(
-      extendBody: true,
-      body: buildscreens[_selectedIndex],
-      bottomNavigationBar: Container(
+    return
+    // Scaffold(
+    //  extendBody: true,
+    //   body: buildscreens[_selectedIndex],
+    //  bottomNavigationBar:
+     Container(
         margin: EdgeInsets.all(displayWidth * .004),
         height: displayWidth * .155,
         decoration: const BoxDecoration(
@@ -63,27 +88,30 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
           scrollDirection: Axis.horizontal,
           padding: EdgeInsets.symmetric(horizontal: displayWidth * .04),
           itemBuilder: (context, index) => InkWell(
-            onTap: () {
-              setState(() {
-                _selectedIndex = index;
-              });
-            },
+             onTap:(){
+              onItemSelected(index);
+             },
+            //  () {
+            //   setState(() {
+            //     _selectedIndex = index;
+            //   });
+            // },
             child: Stack(
               children: [
                 AnimatedContainer(
                   duration: const Duration(seconds: 1),
                   curve: Curves.fastLinearToSlowEaseIn,
-                  width: index == _selectedIndex
+                  width: index == selectedIndex
                       ? displayWidth * .32
                       : displayWidth * .18,
                   alignment: Alignment.center,
                   child: AnimatedContainer(
                     duration: const Duration(seconds: 1),
                     curve: Curves.fastLinearToSlowEaseIn,
-                    height: index == _selectedIndex ? displayWidth * .08 : 0,
-                    width: index == _selectedIndex ? displayWidth * .26 : 0,
+                    height: index == selectedIndex ? displayWidth * .08 : 0,
+                    width: index == selectedIndex ? displayWidth * .26 : 0,
                     decoration: BoxDecoration(
-                      color: index == _selectedIndex
+                      color: index == selectedIndex
                           ? Colors.grey.shade200
                           : Colors.black,
                       borderRadius: BorderRadius.circular(40),
@@ -93,7 +121,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
                 AnimatedContainer(
                   duration: const Duration(seconds: 1),
                   curve: Curves.fastLinearToSlowEaseIn,
-                  width: index == _selectedIndex
+                  width: index == selectedIndex
                       ? displayWidth * .31
                       : displayWidth * .18,
                   alignment: Alignment.centerRight,
@@ -104,16 +132,16 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
                           AnimatedContainer(
                             duration: const Duration(seconds: 1),
                             curve: Curves.fastLinearToSlowEaseIn,
-                            width: index == _selectedIndex
+                            width: index == selectedIndex
                                 ? displayWidth * .135
                                 : 0,
                           ),
                           AnimatedOpacity(
-                            opacity: index == _selectedIndex ? 1 : 0,
+                            opacity: index == selectedIndex ? 1 : 0,
                             duration: const Duration(seconds: 1),
                             curve: Curves.fastLinearToSlowEaseIn,
                             child: Text(
-                              index == _selectedIndex
+                              index == selectedIndex
                                   ? '${listOfStrings[index]}'
                                   : '',
                               style: const TextStyle(
@@ -132,13 +160,13 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
                               borderRadius: BorderRadius.circular(60),
                               child: Container(
                                 height: 70,
-                                color: index == _selectedIndex
+                                color: index == selectedIndex
                                     ? Colors.black
                                     : Colors.white,
                                 padding: const EdgeInsets.all(10),
                                 child: Image.asset(
                                   listOfimages[index],
-                                  color: index == _selectedIndex
+                                  color: index == selectedIndex
                                       ? Colors.white
                                       : Colors.black,
                                 ),
@@ -152,11 +180,11 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
             ),
           ),
         ),
-      ),
+      
+     
     );
   }
-
-  List listOfimages = [
+   List listOfimages = [
     AppImages.home,
     AppImages.trolley,
     AppImages.notify,
@@ -168,4 +196,5 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
     'Notification',
     'Profile',
   ];
+
 }
