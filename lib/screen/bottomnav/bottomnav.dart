@@ -1,7 +1,9 @@
+
+import 'package:ecommerce_app_3/screen/homepage/sliver_homepage.dart';
 import 'package:ecommerce_app_3/screen/pages/notify/notify.dart';
 import 'package:ecommerce_app_3/utils/app_images.dart';
 import 'package:flutter/material.dart';
-
+import 'package:ecommerce_app_3/screen/homepage/homepage.dart';
 import 'package:ecommerce_app_3/screen/pages/cart/cart.dart';
 import 'package:ecommerce_app_3/screen/homepage/homepage.dart';
 import 'package:ecommerce_app_3/screen/pages/profilepage/profile.dart';
@@ -20,7 +22,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   var _selectedIndex = 0;
 
   List<Widget> buildscreens = [
-    Homescreen(),
+  SliverHomescreen(),
     Cart(),
     Notifications(),
     Profile1(),
