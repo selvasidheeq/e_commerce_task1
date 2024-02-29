@@ -20,7 +20,7 @@ class _LoginpageState extends State<Loginpage> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool isenable=false;
 
-  
+ 
 
  
 
@@ -128,7 +128,7 @@ class _LoginpageState extends State<Loginpage> {
                                   ),
                                 controller: _passwordController,
                                 obscureText: _obscureText,
-                                validator:FormValidator. validateEmail,
+                                validator:FormValidator. validatePassword,
                                ),),
                           ),
                           SizedBox(height: 10,),

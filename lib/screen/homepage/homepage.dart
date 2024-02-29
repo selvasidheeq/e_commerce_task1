@@ -1,3 +1,4 @@
+import 'package:ecommerce_app_3/screen/homepage/widgets/gridview_products.dart';
 import 'package:ecommerce_app_3/screen/productpage/products.dart';
 import 'package:ecommerce_app_3/utils/app_images.dart';
 import 'package:flutter/material.dart';
@@ -31,14 +32,14 @@ class _HomescreenState extends State<Homescreen> {
                 CustomAppbar(),
                 
                 SizedBox(height: 35),
-                SearchBar(),
+                CustomSearchbar(),
                 
                 SizedBox(height: 10,),
                  CatogoryList(),
                 
                 SizedBox(height: 7,),
 
-                products()
+               ProductGridview()
               ],
 
             ),

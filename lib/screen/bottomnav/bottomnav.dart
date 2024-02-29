@@ -5,9 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:ecommerce_app_3/screen/pages/cart/cart.dart';
 import 'package:ecommerce_app_3/screen/homepage/homepage.dart';
 import 'package:ecommerce_app_3/screen/pages/profilepage/profile.dart';
-void main() {
-  runApp( BottomNavigationScreen());
-}
+
 
 class BottomNavigationScreen extends StatefulWidget {
   
@@ -18,7 +16,7 @@ class BottomNavigationScreen extends StatefulWidget {
   State<BottomNavigationScreen> createState() => _BottomNavigationScreenState();
 }
 class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
-     final pageBucket =PageStorageBucket();
+    // final pageBucket =PageStorageBucket();
   var _selectedIndex = 0;
 
   List<Widget> buildscreens = [
@@ -32,17 +30,17 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
        extendBody: true,
-      body: 
+      body:  buildscreens[_selectedIndex],
       //buildscreens[_selectedIndex],
-      PageStorage(bucket: pageBucket,child: buildscreens[_selectedIndex],),
-      // bottomNavigationBar : bottamnav_widget(
-      //    selectedIndex: _selectedIndex,
-      //   onItemSelected: (index) {
-      //     setState(() {
-      //       _selectedIndex = index;
-      //     });
-      //   },
-      // ),
+     // PageStorage(bucket: pageBucket,child: buildscreens[_selectedIndex],),
+      bottomNavigationBar : bottamnav_widget(
+         selectedIndex: _selectedIndex,
+        onItemSelected: (index) {
+          setState(() {
+            _selectedIndex = index;
+          });
+        },
+      ),
     );
     
   }
