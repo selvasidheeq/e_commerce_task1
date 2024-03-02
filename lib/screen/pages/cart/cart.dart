@@ -80,11 +80,12 @@ class _CartState extends State<Cart> {
                   );
                 },
               );
-            } else if (snapshot.hasError) {
-              return Text('${snapshot.error}');
-            }
-
-            return CircularProgressIndicator();
+            } 
+            else {
+            return 
+              const CircularProgressIndicator();
+          
+          }
           },
         ),
       ),
