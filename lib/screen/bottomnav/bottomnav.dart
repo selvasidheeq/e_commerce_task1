@@ -22,7 +22,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   var _selectedIndex = 0;
 
   List<Widget> buildscreens = [
-  SliverHomescreen(),
+    SliverHomescreen(),
     Cart(),
     Notifications(),
     Profile1(),

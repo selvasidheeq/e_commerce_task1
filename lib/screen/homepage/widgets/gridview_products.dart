@@ -45,9 +45,9 @@ class ProductGridview extends StatelessWidget {
   Widget build(BuildContext context) {
     var height=MediaQuery.of(context).size.height;
     return SizedBox(
-      //height: 420,
+      //height: 100,
       child: Padding(
-        padding: const EdgeInsets.all(7),
+        padding: const EdgeInsets.all(5),
         child: GridView.builder(
           shrinkWrap: true,
           physics: BouncingScrollPhysics(parent: ClampingScrollPhysics()),

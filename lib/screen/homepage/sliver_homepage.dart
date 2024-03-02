@@ -1,12 +1,12 @@
 import 'package:ecommerce_app_3/screen/homepage/widgets/gridview_products.dart';
-import 'package:ecommerce_app_3/screen/productpage/products.dart';
-import 'package:ecommerce_app_3/utils/app_images.dart';
-import 'package:flutter/foundation.dart';
+//import 'package:ecommerce_app_3/screen/productpage/products.dart';
+//import 'package:ecommerce_app_3/utils/app_images.dart';
+//import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app_3/screen/homepage/widgets/category.dart';
 import 'package:ecommerce_app_3/screen/homepage/widgets/search_bar.dart';
 import 'package:ecommerce_app_3/screen/homepage/widgets/app_bar.dart';
-import 'dart:math' as math;
+//import 'dart:math' as math;
 
 class SliverHomescreen extends StatefulWidget {
   @override
@@ -59,15 +59,17 @@ class _SliverHomescreenState extends State<SliverHomescreen> {
              
              )
           ),
+        
 
                SliverList(delegate:
                SliverChildListDelegate(
                 [
-             ProductGridview()
-        
-
-
-    ]  )  ) 
+                
+                          ProductGridview()
+                     
+               
+               
+                 ]  )  ) 
      ],),
    );
   }

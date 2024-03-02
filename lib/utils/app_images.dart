@@ -2,7 +2,7 @@ class AppImages{
    static const logo = "assets/icons/ic_logo.jpeg";
   static const menu2 = "assets/icons/menu2.png";
   static const heart = "assets/icons/ic_heart.png";
-  static const home = "assetsicons/ic_home.png";
+  static const home = "assets/icons/ic_home.png";
   static const human = "assets/icons/ic_human.png";
   static const menu = "assets/icons/ic_menu.png";
   static const notify = "assets/icons/ic_notify.png";

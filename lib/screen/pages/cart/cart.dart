@@ -9,7 +9,7 @@ class Cart extends StatefulWidget {
 }
 
 class _CartState extends State<Cart> {
-  late Future<List<Photo>> futurePhotos;
+  
   List<Photo> _photos =[];
  
  Future<List<Photo>> getData() async{
@@ -33,7 +33,7 @@ class _CartState extends State<Cart> {
     
       body: Center(
         child: FutureBuilder<List<Photo>>(
-          future: futurePhotos,
+          future: getData(),
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               return ListView.builder(
