@@ -31,9 +31,12 @@ class _SliverHomescreenState extends State<SliverHomescreen> {
             automaticallyImplyLeading: false,
             elevation: 0,
             pinned: true,
-            
+            floating: true,
+             // expandedHeight: 5,
+           bottom: PreferredSize(preferredSize:  Size.fromHeight(5),
+           child:SizedBox(height: 5)),
          flexibleSpace: const CustomAppbar(),
-       // child: Padding(padding: EdgeInsets.only(top: 25),
+             // child: Padding(padding: EdgeInsets.only(top: 25),
         //  child: Column(
           //  crossAxisAlignment: CrossAxisAlignment.start,
           //  children: [
