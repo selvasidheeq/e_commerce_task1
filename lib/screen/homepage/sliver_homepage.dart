@@ -55,9 +55,11 @@ class _SliverHomescreenState extends State<SliverHomescreen> {
             delegate: _SliverAppBarDelegate(
               minHeight: 60.00,
               maxHeight: 100.0,
+             child: Container(
+              color: Colors.white,
               child:const CatogoryList(),
              
-             )
+               ) )
           ),
         
 

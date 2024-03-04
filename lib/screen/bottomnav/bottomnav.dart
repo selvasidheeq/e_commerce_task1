@@ -193,7 +193,7 @@ class bottamnav_widget extends StatelessWidget {
   List<String> listOfStrings = [
     'Home',
     'Cart',
-    'Notification',
+    'Notify',
     'Profile',
   ];
 
